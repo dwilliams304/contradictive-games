@@ -11,6 +11,7 @@
   /* Colors */
   --primaryColor: #000fff;
   --secondaryColor: #000fff;
+  --backgroundColor: white;
   --tertiaryColor: #000fff;
   --textColor: #000fff;
   --textColorDarK: #000fff;
@@ -22,4 +23,8 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+}
+
+ul {
+  list-style: none;
 }
