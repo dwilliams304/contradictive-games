@@ -1,3 +1,23 @@
-.dropdown-content {
+.main-nav .dropdown-content {
     display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 18px;
+    color: black;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    transform: translateX(-14px);
+}
+.main-nav .dropdown-content a {
+    display: block;
+    padding: 14px;
+    min-width: 150px;
+}
+
+.main-nav .dropdown-content a:hover {
+    background-color: rgb(211, 223, 255);
+}
+
+
+.main-nav .nav-item:first-child:hover .dropdown-content {
+    display: block;
 }
