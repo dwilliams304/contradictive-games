@@ -20,7 +20,11 @@ function App() {
   return (
     <>
       <NavBar />
-      <Hero />
+      <Hero 
+        title='Game Title'
+        description='Play this game, as it is really really fun'
+        mediaUrl='https://cms-assets.unrealengine.com/d66nnRxEQpatoaaSG3ww'
+      />
     </>
   )
 }

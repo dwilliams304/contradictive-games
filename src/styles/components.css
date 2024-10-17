@@ -1,3 +1,4 @@
+/* NAVBAR DROPDOWN */
 .main-nav .dropdown-content {
     display: none;
     position: absolute;
@@ -20,4 +21,10 @@
 
 .main-nav .nav-item:first-child:hover .dropdown-content {
     display: block;
+}
+
+
+/* HERO */
+.hero {
+    width: 100%;
 }
