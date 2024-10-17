@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--secondaryColor);
+    background-color: black;
     color: var(--textColor);
 }
 
