@@ -3,17 +3,19 @@ import "../styles/components.css";
 type DropdownProps = {
     hover: boolean
     title: string
-    links: [{
-        content: string,
-        url: string
-    }]
+    links: DropdownItems[]
 };
+
+type DropdownItems = {
+    content: string,
+    url: string
+}
 
 export default function Dropdown(props: DropdownProps){
     
     return(
-        <div className="dropdown-container">
-            <a className="dropdown">
+        <div className="dropdown">
+            <a className="dropdown-title">
                 {props.title}
             </a>
             <div className="dropdown-content">
