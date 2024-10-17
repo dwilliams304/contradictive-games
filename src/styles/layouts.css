@@ -9,8 +9,10 @@
     color: var(--textColor);
 }
 
-.nav-title {
-    padding: 14px 20px;
+.nav-title,
+.nav-item {
+    padding: 18px 14px;
+    font-size: 18px;
 }
 
 .nav-links {
@@ -19,7 +21,6 @@
 }
 
 .nav-item {
-    padding: 14px 20px;
     cursor: pointer;
 }
 

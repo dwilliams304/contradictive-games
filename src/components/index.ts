@@ -1,5 +1,7 @@
-import Dropdown from "./Dropdown";
+import Dropdown from './Dropdown';
+import Hero from './Hero';
 
 export {
-    Dropdown as Dropdown
+    Dropdown as Dropdown,
+    Hero as Hero
 }

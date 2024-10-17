@@ -1,5 +1,5 @@
-import { Dropdown } from "../components";
-import "../styles/layouts.css";
+import { Dropdown } from '../components';
+import '../styles/layouts.css';
 
 
 export default function NavBar(){
