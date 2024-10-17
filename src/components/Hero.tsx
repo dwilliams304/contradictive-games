@@ -10,11 +10,13 @@ export default function Hero(props: HeroProps){
     return(
         <div className="hero">
             <div className="hero-details">
-                <h2>{props.title}</h2>
-                <p>{props.description}</p>
-                <div className="buttons-sbs">
-                    <button className="btn-main">Play Now</button>
-                    <button className="btn-secondary">Developer Logs</button>
+                <div className="hero-details container">
+                    <h2>{props.title}</h2>
+                    <p>{props.description}</p>
+                    <div className="buttons-sbs">
+                        <button className="btn-main">Play Now</button>
+                        <button className="btn-secondary">Dev Logs</button>
+                    </div>
                 </div>
             </div>
             <div className="hero-media">
