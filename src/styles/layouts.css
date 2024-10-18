@@ -9,10 +9,14 @@
 }
 
 .nav-title,
-.nav-item {
+.nav-item{
     padding: 18px 14px;
     font-size: 18px;
 }
+.nav-title {
+    font-weight: 600;
+}
+
 
 
 .nav-links {

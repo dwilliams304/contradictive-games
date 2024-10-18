@@ -11,6 +11,7 @@
   /* Colors */
   --c_background: #1f1f1f;
   --c_primary: #00f19c; /* Main brand color */
+  --c_primaryHighlight: #72eec3; /* Main brand color when highlighted */
   --c_darkAccent: #676C6E; /* Secondary - dark */
   --c_lightAccent: #749A97; /* Secondary - light */
   --c_darkShade: #1B1E27; /* Tertiary - dark */
@@ -36,6 +37,12 @@
 
   /* Box shadows */
   --shdw_boxSm: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  --shdw_boxMd: 8px 8px 20px 2px black;
+
+
+  /* Transitions */
+  --trs_short: all ease-in-out 150ms;
+  --trs_md: all ease-in-out 300ms;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -103,13 +110,20 @@ body {
   cursor: pointer;
   border-radius: var(--rnd_buttonMD);
   font-weight: var(--fnt_md);
-  transition: all ease-in-out 300ms;
+  transition: var(--trs_md);
 }
 
 .btn-main:hover,
 .btn-secondary:hover {
   box-shadow: var(--shdw_boxSm);
   transform: scale(1.05);
+}
+.btn-main:hover {
+  background-color: var(--c_primaryHighlight);
+}
+.btn-secondary:hover {
+  background-color: var(--c_darkAccent);
+  border-color: var(--c_primaryHighlight);
 }
 
 .btn-main {
@@ -119,5 +133,6 @@ body {
 
 .btn-secondary {
   border: 3px solid var(--c_primary);
+  background-color: var(--c_background);
   color: var(--c_lightText);
 }
