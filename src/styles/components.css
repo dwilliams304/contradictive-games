@@ -123,13 +123,26 @@
 }
 
 .article-card .card-bottom {
-    display: grid;
-    grid-auto-flow: row;
-    gap: 12px 0;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 14px 16px;
+}
+.card-bottom div {
+    display: flex;
+    flex-direction: inherit;
+}
+.card-bottom div p {
+    padding-top: 10px;
 }
 
 .article-card .card-bottom h3 {
     font-size: 24px;
     font-weight: bold;
+}
+
+.article-card .card-date {
+    padding-top: auto;
+    color: rgba(184, 184, 184, 0.226);
 }

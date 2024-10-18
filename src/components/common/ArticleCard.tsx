@@ -1,14 +1,27 @@
 import "../../styles/components.css";
+type ArticleCardProps = {
+    card: {
+        imgUrl: string
+        imgAlt: string
+        title: string
+        description: string
+        date: Date
+    }
+}
 
-export default function ArticleCard(){
+export default function ArticleCard(props: ArticleCardProps){
+    const {imgUrl, imgAlt, title, description, date} = props.card;
     return(
         <div className="article-card">
             <div className="card-top">
-                <img src="" alt="" />
+                <img src={imgUrl} alt={imgAlt} />
             </div>
             <div className="card-bottom">
-                <h3>Article tite</h3>
-                <p>Brief article description</p>
+                <div>
+                    <h3>{title}</h3>
+                    <p>{description}</p>
+                </div>
+                <p className="card-date">{date.toDateString()}</p>
             </div>
         </div>
     )

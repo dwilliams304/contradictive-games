@@ -7,11 +7,15 @@ export default function Articles(){
             <div className='container'>
                 <h2 className='section-header'>News & Updates &rarr;</h2>
                 <div className='articles-list'>
-                    <ArticleCard />
-                    <ArticleCard />
-                    <ArticleCard />
-                    <ArticleCard />
-                    <ArticleCard />
+                    <ArticleCard 
+                        card={{
+                            imgUrl: "",
+                            imgAlt: "alt",
+                            title: "Article title",
+                            description: "Brief article description",
+                            date: new Date()
+                        }}
+                    />
                 </div>
             </div>
         </div>
