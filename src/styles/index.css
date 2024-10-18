@@ -9,15 +9,33 @@
   -moz-osx-font-smoothing: grayscale;
 
   /* Colors */
-  --primaryColor: #007763;
-  --secondaryColor: #002b4e;
-  --backgroundColor: rgb(27, 27, 27);
-  --tertiaryColor: #000fff;
-  --textColor: #ffffff;
-  --textColorDarK: #000fff;
+  --c_background: #1f1f1f;
+  --c_primary: #00f19c; /* Main brand color */
+  --c_darkAccent: #676C6E; /* Secondary - dark */
+  --c_lightAccent: #749A97; /* Secondary - light */
+  --c_darkShade: #1B1E27; /* Tertiary - dark */
+  --c_lightShade: #F2EFF0; /* Tertiary - light */
+  --c_lightText: #f8ffff;
+  --c_darkText: #373a3a;
 
+  /* Font weights */
+  --fnt_thin: 300;
+  --fnt_md: 500;
+  --fnt_thick: 800;
+
+  /* Font sizes */
+  --txt_sm: 12px;
+  --txt_md: 20px;
+  --txt_lg: 24px;
+  
+  
   /* Border radius */
-  --buttonRoundedMD: 10px;
+  --rnd_buttonSM: 5px;
+  --rnd_buttonMD: 10px;
+  --rnd_buttonLG: 20px;
+
+  /* Box shadows */
+  --shdw_boxSm: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 html, body, div, span, applet, object, iframe,
@@ -65,11 +83,12 @@ table {
 }
 button {
   border: none;
-  background-color: rgba(255, 255, 255, 0);
+  background: none;
 }
 
 body {
-  background-color: var(--backgroundColor);
+  background-color: var(--c_background);
+  color: var(--c_lightText);
 }
 
 .buttons-sbs {
@@ -82,15 +101,23 @@ body {
 .btn-secondary {
   padding: 14px 16px;
   cursor: pointer;
-  border-radius: var(--buttonRoundedMD);
+  border-radius: var(--rnd_buttonMD);
+  font-weight: var(--fnt_md);
+  transition: all ease-in-out 300ms;
+}
+
+.btn-main:hover,
+.btn-secondary:hover {
+  box-shadow: var(--shdw_boxSm);
+  transform: scale(1.05);
 }
 
 .btn-main {
-  background-color: var(--primaryColor);
-  color: var(--textColor);
+  background-color: var(--c_primary);
+  color: var(--c_darkText);
 }
 
 .btn-secondary {
-  border: 3px solid var(--primaryColor);
-  color: var(--textColor);
+  border: 3px solid var(--c_primary);
+  color: var(--c_lightText);
 }

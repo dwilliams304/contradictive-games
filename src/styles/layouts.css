@@ -6,7 +6,6 @@
     align-items: center;
     justify-content: space-between;
     background-color: black;
-    color: var(--textColor);
 }
 
 .nav-title,
@@ -26,5 +25,5 @@
 }
 
 .nav-item:hover {
-    background-color: var(--primaryColor);
+    background-color: var(--c_darkAccent);
 }
