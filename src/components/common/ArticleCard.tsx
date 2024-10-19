@@ -1,6 +1,6 @@
 import "../../styles/components.css";
-type ArticleCardProps = {
-    card: {
+export type ArticleCardProps = {
+    article: {
         imgUrl: string
         imgAlt: string
         title: string
@@ -10,7 +10,7 @@ type ArticleCardProps = {
 }
 
 export default function ArticleCard(props: ArticleCardProps){
-    const {imgUrl, imgAlt, title, description, date} = props.card;
+    const {imgUrl, imgAlt, title, description, date} = props.article;
     return(
         <div className="article-card">
             <div className="card-top">
