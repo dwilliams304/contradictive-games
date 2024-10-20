@@ -19,9 +19,9 @@ export default function ArticleCard(props: ArticleCardProps){
             <div className="card-bottom">
                 <div>
                     <h3>{title}</h3>
-                    <p>{description}</p>
-                </div>
                 <p className="card-date">{date.toDateString()}</p>
+                </div>
+                <p>{description}</p>
             </div>
         </div>
     )

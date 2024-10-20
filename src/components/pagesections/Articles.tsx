@@ -11,7 +11,10 @@ export default function Articles(){
     return(
         <div className='articles'>
             <div className='container'>
-                <h2 className='section-header'>News & Updates &rarr;</h2>
+                <div className='section-header'>
+                    <h2>News & Updates &rarr;</h2>
+                    <p>View all news</p>
+                </div>
                 <div className='articles-list'>
                     {
                         articles.map((article, idx) => {

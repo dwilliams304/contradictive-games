@@ -136,3 +136,8 @@ body {
   background-color: var(--c_background);
   color: var(--c_lightText);
 }
+
+.section-header {
+  padding: 14px 8%;
+  border-bottom: 2px solid var(--c_primary);
+}
