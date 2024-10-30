@@ -1,12 +1,7 @@
+import { Article } from "../../data/dummyArticles";
 import "../../styles/components.css";
 export type ArticleCardProps = {
-    article: {
-        imgUrl: string
-        imgAlt: string
-        title: string
-        description: string
-        date: Date
-    }
+    article: Article
 }
 
 export default function ArticleCard(props: ArticleCardProps){
@@ -19,9 +14,14 @@ export default function ArticleCard(props: ArticleCardProps){
             <div className="card-bottom">
                 <div>
                     <h3>{title}</h3>
-                <p className="card-date">{date.toDateString()}</p>
+                    <p className="card-date">
+                        { date.toDateString() }
+                    </p>
                 </div>
-                <p>{description}</p>
+                
+                <p>
+                    {description}
+                </p>
             </div>
         </div>
     )

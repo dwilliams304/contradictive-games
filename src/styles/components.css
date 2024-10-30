@@ -128,6 +128,7 @@
 .article-card:hover {
     box-shadow: var(--shdw_boxMd);
     border-color: var(--c_primaryHighlight);
+    transform: scale(1.02);
 }
 
 .article-card .card-top {
