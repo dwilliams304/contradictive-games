@@ -1,5 +1,5 @@
-import { Article } from "../../data/dummyArticles";
-import "../../styles/components.css";
+import { Article } from "../../../../data/dummyArticles";
+
 export type ArticleCardProps = {
     article: Article
 }

@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
 
-import "../../styles/components.css";
-import ArticleCard from "../common/ArticleCard";
-import { dummyArticles, Article } from "../../data/dummyArticles";
+import ArticleCard from "./ArticleCard";
+import { dummyArticles, Article } from "../../../../data/dummyArticles";
 
 export default function Articles(){
     const [articles, setArticles] = useState<Article[] | null>(dummyArticles);

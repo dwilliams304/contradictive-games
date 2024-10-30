@@ -1,4 +1,3 @@
-import "../../styles/components.css";
 
 type HeroProps = {
     title: string

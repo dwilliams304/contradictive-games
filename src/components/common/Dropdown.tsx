@@ -1,4 +1,4 @@
-import "../../styles/components.css";
+import "../components.css";
 
 type DropdownProps = {
     hover: boolean

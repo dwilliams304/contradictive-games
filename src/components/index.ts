@@ -1,7 +1,7 @@
 import Dropdown from "./common/Dropdown";
-import Hero from "./pagesections/Hero";
-import Articles from "./pagesections/Articles";
-import ArticleCard from "./common/ArticleCard";
+import Hero from "./pages/Landing/sections/Hero";
+import Articles from "./pages/Landing/sections/Articles";
+import ArticleCard from "./pages/Landing/sections/ArticleCard";
 
 export {
     Dropdown as Dropdown,

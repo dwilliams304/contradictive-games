@@ -1,5 +1,5 @@
 import { Dropdown } from "..";
-import "../../styles/layouts.css";
+import "./layouts.css";
 
 
 export default function NavBar(){
