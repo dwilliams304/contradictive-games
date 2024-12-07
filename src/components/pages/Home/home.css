@@ -1,0 +1,24 @@
+.hero {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.content {
+    position: absolute;
+    display: flex; flex-direction: column;
+    gap: 18px;
+    width: 40%;
+    font-size: var(--txt_lg);
+}
+
+.content h2 {
+    font-size: var(--txt_2xl);
+    font-weight: var(--fnt_thick);
+}
+
+.media {
+    padding-left: 35%;
+}

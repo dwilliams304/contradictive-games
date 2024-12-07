@@ -22,6 +22,7 @@ import {
 // Styles
 import "./styles/reset.css";
 import "./styles/index.css";
+import "./styles/layout.css";
 
 
 ReactDOM.createRoot(document.getElementById("root")!).render(

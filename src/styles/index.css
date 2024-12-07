@@ -14,7 +14,7 @@
   --c_drk_txt: #e4f4f6;
   --c_drk_bg: #030909;
   --c_drk_prim: #009da8;
-  --c_drk_cec: #2a407d;
+  --c_drk_sec: #2a407d;
   --c_drk_acc: #f0336f;
 
   --c_lght_text: #09191b;
@@ -55,4 +55,8 @@
 body {
   background-color: var(--c_drk_bg);
   color: var(--c_drk_txt);
+}
+
+section {
+  padding-top: 20px;
 }
