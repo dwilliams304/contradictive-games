@@ -8,16 +8,20 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  color-scheme: dark light;
+
   /* Colors */
-  --c_background: #1f1f1f;
-  --c_primary: #00f19c; /* Main brand color */
-  --c_primaryHighlight: #72eec3; /* Main brand color when highlighted */
-  --c_darkAccent: #676C6E; /* Secondary - dark */
-  --c_lightAccent: #749A97; /* Secondary - light */
-  --c_darkShade: #1B1E27; /* Tertiary - dark */
-  --c_lightShade: #F2EFF0; /* Tertiary - light */
-  --c_lightText: #f8ffff;
-  --c_darkText: #373a3a;
+  --c_drk_txt: #e4f4f6;
+  --c_drk_bg: #030909;
+  --c_drk_prim: #009da8;
+  --c_drk_cec: #2a407d;
+  --c_drk_acc: #f0336f;
+
+  --c_lght_text: #09191b;
+  --c_lght_bg: #f7fcfc;
+  --c_lght_prim: #57f4ff;
+  --c_lght_sec: #8197d5;
+  --c_lght_acc: #cc0f4b;
 
   /* Font weights */
   --fnt_thin: 300;
@@ -28,7 +32,8 @@
   --txt_sm: 12px;
   --txt_md: 20px;
   --txt_lg: 24px;
-  
+  --txt_xl: 32px;
+  --txt_2xl: 40px;
   
   /* Border radius */
   --rnd_buttonSM: 5px;
@@ -41,56 +46,13 @@
 
 
   /* Transitions */
-  --trs_short: all ease-in-out 150ms;
-  --trs_md: all ease-in-out 300ms;
+  --trs_shrt: all ease-in-out 150ms;
+  --trs_med: all ease-in-out 300ms;
+  --trs_lng: all ease-in-out 450ms;
 }
 
 
 body {
-  background-color: var(--c_background);
-  color: var(--c_lightText);
-}
-
-.buttons-sbs {
-  display: grid;
-  grid-auto-flow: column;
-  gap: 0px 20px;
-}
-
-.btn-main,
-.btn-secondary {
-  padding: 14px 16px;
-  cursor: pointer;
-  border-radius: var(--rnd_buttonMD);
-  font-weight: var(--fnt_md);
-  transition: var(--trs_md);
-}
-
-.btn-main:hover,
-.btn-secondary:hover {
-  box-shadow: var(--shdw_boxSm);
-  transform: scale(1.05);
-}
-.btn-main:hover {
-  background-color: var(--c_primaryHighlight);
-}
-.btn-secondary:hover {
-  background-color: var(--c_darkAccent);
-  border-color: var(--c_primaryHighlight);
-}
-
-.btn-main {
-  background-color: var(--c_primary);
-  color: var(--c_darkText);
-}
-
-.btn-secondary {
-  border: 3px solid var(--c_primary);
-  background-color: var(--c_background);
-  color: var(--c_lightText);
-}
-
-.section-header {
-  padding: 14px 8%;
-  border-bottom: 2px solid var(--c_primary);
+  background-color: var(--c_drk_bg);
+  color: var(--c_drk_txt);
 }
