@@ -13,7 +13,7 @@ export default function Button(props: ButtonProps){
 
 
     return(
-        <button className={`btn-${styleType} ${classes}`}
+        <button className={`btn btn-${styleType} ${classes}`}
         title={tooltip}
         type={type}
         disabled={disabled}

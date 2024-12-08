@@ -13,6 +13,7 @@
   /* Colors */
   --c_drk_txt: #e4f4f6;
   --c_drk_bg: #061212;
+  --c_drk_bgHighlight: #1a4d4d;
   --c_drk_prim: #009da8;
   --c_drk_sec: #2a407d;
   --c_drk_acc: #f0336f;
@@ -30,6 +31,7 @@
 
   /* Font sizes */
   --txt_sm: 12px;
+  --txt_btn: 18px;
   --txt_md: 20px;
   --txt_lg: 24px;
   --txt_xl: 32px;
@@ -59,4 +61,30 @@ body {
 
 section {
   padding-top: 20px;
+}
+
+.btn {
+  padding: 14px 32px;
+  font-size: var(--txt_btn);
+  border: 1px solid none;
+  border-radius: var(--rnd_buttonMD);
+  transition: var(--trs_shrt);
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--c_drk_prim);
+  color: var(--c_drk_bg);
+  border: 1px solid var(--c_drk_prim);
+}
+.btn-primary:hover {
+  background-color: var(--c_drk_bg);
+  color: var(--c_drk_txt)
+}
+
+.btn-secondary {
+  border: 1px solid var(--c_drk_prim);
+}
+.btn-secondary:hover{
+  background-color: var(--c_drk_bgHighlight);
 }
