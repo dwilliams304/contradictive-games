@@ -1,5 +1,5 @@
 type ButtonProps = {
-    classes: string;
+    classes?: string;
     styleType?: "primary" | "secondary" | "tertiary";
     type: "button" | "submit" | "reset";
     fn: ((...args: any[]) => void);

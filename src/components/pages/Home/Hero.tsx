@@ -1,3 +1,7 @@
+import {
+    Button
+} from "../../common/";
+
 export default function Hero(){
     return(
         <section className="hero">
@@ -8,6 +12,25 @@ export default function Hero(){
                     magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
                     consequat
                 </p>
+                <div>
+                    <Button 
+                        styleType="primary"
+                        text="Button 1"
+                        tooltip="Button 1"
+                        type="button"
+                        disabled={false}
+                        fn={() => {}}
+                    />
+
+                    <Button 
+                        styleType="secondary"
+                        text="Button 2"
+                        tooltip="Button 2"
+                        type="button"
+                        disabled={false}
+                        fn={() => {}}
+                    />
+                </div>
             </div>
             <div className="media">
                 <img 
