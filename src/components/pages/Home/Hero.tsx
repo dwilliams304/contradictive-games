@@ -2,15 +2,24 @@ import {
     Button
 } from "../../common/";
 
-export default function Hero(){
+export type HeroProps = {
+    hero: {
+        header: string;
+        description: string;
+        mediaUrl: string;
+        mediaType: "img" | "vid";
+        mediaAlt: string;
+        mediaTitle?: string;
+    }
+}
+
+export default function Hero({hero}: HeroProps){
     return(
         <section className="hero">
             <div className="content">
-                <h2>Hero Header</h2>
+                <h2>{hero.header}</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
-                    consequat
+                    {hero.description}
                 </p>
                 <div>
                     <Button 
@@ -34,12 +43,19 @@ export default function Hero(){
             </div>
             <div className="media">
                 <div className="overlay">
-                    <img 
-                        src="https://www.travelandleisure.com/thmb/Y7hV-3YzRm6f46T0P8pb0Tbs7pA=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/james-webb-hole-WEBB0722-a7b14258290d4da9be4c7d50ee732d9b.jpg" 
-                        alt="hero media"
-                    />
+                    {
+                        hero.mediaType === "img" ?
+                        <img 
+                            src={hero.mediaUrl} 
+                            alt={hero.mediaAlt}
+                        />
+                        :
+                        <video title="" muted={true} autoPlay={true} loop={true}>
+                            <source src={hero.mediaUrl} type="video/mp4" />
+                        </video>
+                    }
                     <p>
-                        Title to Media
+                        {hero.mediaTitle}
                     </p>
                 </div>
             </div>
