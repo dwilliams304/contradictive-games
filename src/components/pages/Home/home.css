@@ -3,15 +3,17 @@
     position: relative;
     align-items: center;
     width: 80vw;
-    margin: 0 auto;
+    margin: 5vh auto;
 }
 
 .content {
     position: absolute;
     display: flex; flex-direction: column;
-    gap: 18px;
-    width: 40%;
+    gap: 42px;
+    width: 50%;
     font-size: var(--txt_lg);
+    text-shadow: var(--txt_shdw_sm);
+    z-index: 5;
 }
 
 .content div {
@@ -26,4 +28,13 @@
 
 .media {
     padding-left: 35%;
+    border-radius: var(--rnd_md);
+}
+
+.media img,
+.media video {
+    border-radius: var(--rnd_lg);
+    border: 1px solid white;
+    filter: brightness(0.5);
+    z-index: -5;
 }

@@ -7,7 +7,7 @@
     /* height: 50px; */
     /* border-bottom: red 1px solid; */
     backdrop-filter: blur(10px);
-    font-size: var(--txt_lg);
+    font-size: var(--txt_md);
 }
 
 .mn-links {

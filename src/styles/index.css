@@ -11,18 +11,19 @@
   color-scheme: dark light;
 
   /* Colors */
-  --c_drk_txt: #e4f4f6;
-  --c_drk_bg: #061212;
-  --c_drk_bgHighlight: #1a4d4d;
-  --c_drk_prim: #009da8;
-  --c_drk_sec: #2a407d;
-  --c_drk_acc: #f0336f;
-
-  --c_lght_text: #09191b;
-  --c_lght_bg: #f7fcfc;
-  --c_lght_prim: #57f4ff;
-  --c_lght_sec: #8197d5;
-  --c_lght_acc: #cc0f4b;
+  /* Dark */
+  --c_drk_txt: #ebe9fc;
+  --c_drk_bg: #010104;
+  --c_drk_bg_Highlight: #17173b;
+  --c_drk_prim: #3a31d8;
+  --c_drk_sec: #020024;
+  --c_drk_acc: #0600c2;
+  /* Light */
+  --c_lght_text: #050316;
+  --c_lght_bg: #fbfbfe;
+  --c_lght_prim: #2f27ce;
+  --c_lght_sec: #dddbff;
+  --c_lght_acc: #443dff;
 
   /* Font weights */
   --fnt_thin: 300;
@@ -35,16 +36,19 @@
   --txt_md: 20px;
   --txt_lg: 24px;
   --txt_xl: 32px;
-  --txt_2xl: 40px;
+  --txt_2xl: 50px;
   
   /* Border radius */
-  --rnd_buttonSM: 5px;
-  --rnd_buttonMD: 10px;
-  --rnd_buttonLG: 20px;
+  --rnd_sm: 5px;
+  --rnd_md: 10px;
+  --rnd_lg: 20px;
 
-  /* Box shadows */
+  /* Shadows */
+  /* Box */
   --shdw_boxSm: 0px 8px 16px 0px rgba(0,0,0,0.2);
   --shdw_boxMd: 8px 8px 20px 2px black;
+  /* Text */
+  --txt_shdw_sm: var(--c_drk_bg) 3px 3px 15px;
 
 
   /* Transitions */
@@ -67,9 +71,12 @@ section {
   padding: 14px 32px;
   font-size: var(--txt_btn);
   border: 1px solid none;
-  border-radius: var(--rnd_buttonMD);
+  border-radius: var(--rnd_md);
   transition: var(--trs_shrt);
   cursor: pointer;
+}
+.btn:hover{
+  scale: 1.1;
 }
 
 .btn-primary {
@@ -86,5 +93,5 @@ section {
   border: 1px solid var(--c_drk_prim);
 }
 .btn-secondary:hover{
-  background-color: var(--c_drk_bgHighlight);
+  background-color: var(--c_drk_bg_Highlight);
 }
