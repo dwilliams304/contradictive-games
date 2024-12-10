@@ -33,10 +33,15 @@ export default function Hero(){
                 </div>
             </div>
             <div className="media">
-                <img 
-                    src="https://www.travelandleisure.com/thmb/Y7hV-3YzRm6f46T0P8pb0Tbs7pA=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/james-webb-hole-WEBB0722-a7b14258290d4da9be4c7d50ee732d9b.jpg" 
-                    alt="hero media"
-                />
+                <div className="overlay">
+                    <img 
+                        src="https://www.travelandleisure.com/thmb/Y7hV-3YzRm6f46T0P8pb0Tbs7pA=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/james-webb-hole-WEBB0722-a7b14258290d4da9be4c7d50ee732d9b.jpg" 
+                        alt="hero media"
+                    />
+                    <p>
+                        Title to Media
+                    </p>
+                </div>
             </div>
         </section>
     )
