@@ -1,68 +1,64 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  color-scheme: dark light;
+
+  /* Colors */
+  /* Dark */
+  --c_drk_txt: #ebe9fc;
+  --c_drk_bg: #010104;
+  --c_drk_bg_Highlight: #17173b;
+  --c_drk_prim: #3a31d8;
+  --c_drk_sec: #020024;
+  --c_drk_acc: #0600c2;
+  /* Light */
+  --c_lght_text: #050316;
+  --c_lght_bg: #fbfbfe;
+  --c_lght_prim: #2f27ce;
+  --c_lght_sec: #dddbff;
+  --c_lght_acc: #443dff;
+
+  /* Font weights */
+  --fnt_thin: 300;
+  --fnt_md: 500;
+  --fnt_thick: 800;
+
+  /* Font sizes */
+  --txt_sm: 12px;
+  --txt_btn: 18px;
+  --txt_md: 20px;
+  --txt_lg: 24px;
+  --txt_xl: 32px;
+  --txt_2xl: 50px;
+
+  /* Border radius */
+  --rnd_sm: 5px;
+  --rnd_md: 10px;
+  --rnd_lg: 20px;
+
+  /* Shadows */
+  /* Box */
+  --shdw_boxSm: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  --shdw_boxMd: 8px 8px 20px 2px black;
+  /* Text */
+  --txt_shdw_sm: var(--c_drk_bg) 3px 3px 15px;
+
+
+  /* Transitions */
+  --trs_shrt: all ease-in-out 150ms;
+  --trs_med: all ease-in-out 300ms;
+  --trs_lng: all ease-in-out 450ms;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+  background-color: var(--c_drk_bg);
+  color: var(--c_drk_txt);
 }
