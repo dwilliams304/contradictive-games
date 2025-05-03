@@ -1,13 +1,7 @@
-type DropdownProps = {
-    title: string;
-    options: DropdownOptions[];
-}
-type DropdownOptions = {
-    content: string;
-    action: () => void;
-}
+import { Dropdown } from "../../types/types";
 
-export default function DropdownMenu(props: DropdownProps){
+
+export default function DropdownMenu(props: Dropdown){
     const { title, options } = props;
     
     return(
@@ -16,8 +10,11 @@ export default function DropdownMenu(props: DropdownProps){
             <div>
                 {
                     options.map((option, i) => (
-                        <p key={i}
-                        onClick={() => option.action}>{option.content}</p>
+                        <p 
+                        key={i}
+                        onClick={() => option.action}>
+                            {option.content}
+                        </p>
                     ))
                 }
             </div>
