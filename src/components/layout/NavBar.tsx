@@ -4,9 +4,7 @@ import './Navbar.css';
 
 // Mock games data - you can replace this with your actual data
 const gamesList = [
-  { id: 'game1', name: 'Adventure Quest', path: '/games/adventure-quest' },
-  { id: 'game2', name: 'Space Odyssey', path: '/games/space-odyssey' },
-  { id: 'game3', name: 'Mystic Realms', path: '/games/mystic-realms' },
+  { id: 'game1', name: 'Neon Divide', path: '/games/neon-divide' }
 ];
 
 export default function Navbar() {

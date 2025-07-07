@@ -1,13 +1,14 @@
 import Hero from '../../common/Hero';
 import './Home.css';
+import neondivide1 from "../../../assets/neondivide-1.png";
 
 export default function Home() {
   return (
     <div className="home-page">
       <Hero 
-        gameTitle="Mystic Realms"
-        gameDescription="Embark on an epic journey through mystical lands filled with adventure, magic, and legendary creatures."
-        backgroundImage="/path/to/your/game-trailer-thumbnail.jpg"
+        gameTitle="Neon Divide"
+        gameDescription="Become the Resistance"
+        backgroundImage={neondivide1}
         // backgroundVideo="/path/to/your/game-trailer.mp4"
       />
       

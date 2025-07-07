@@ -1,6 +1,11 @@
 import { useParams } from 'react-router-dom';
 import './GameDetail.css';
 
+import neondivide1 from '../../../assets/neondivide-1.png';
+import neondivide2 from '../../../assets/neondivide-2.png';
+import neondivide3 from '../../../assets/neondivide-3.png';
+import neondivide4 from '../../../assets/neondivide-4.png';
+
 // Types for game data
 interface GameData {
   title: string;
@@ -35,93 +40,44 @@ interface GameData {
 
 // Mock game data - replace with your actual game data
 const gameData: { [key: string]: GameData } = {
-  'adventure-quest': {
-    title: 'Adventure Quest',
-    subtitle: 'An Epic Journey Awaits',
-    description: 'Embark on an epic journey through mystical lands filled with danger, wonder, and ancient secrets waiting to be discovered.',
-    longDescription: `Adventure Quest is our flagship RPG that combines classic adventure gameplay with modern mechanics. Players will explore vast open worlds, engage in strategic combat, and uncover a deep narrative that spans multiple kingdoms.
-
-    The game features a unique magic system where players can combine elements to create custom spells, a branching storyline with meaningful choices, and beautifully hand-crafted environments that tell their own stories.`,
-    releaseDate: '2024-03-15',
-    platforms: ['Steam', 'Epic Games', 'PlayStation', 'Xbox'],
-    status: 'Released',
-    price: '$29.99',
-    rating: '9.2/10',
-    trailerUrl: '/path/to/adventure-quest-trailer.mp4',
+  'neon-divide': {
+    title: 'Neon Divide',
+    subtitle: 'Become the Resistance',
+    description: '',
+    longDescription: `There will be a long description that eventually goes here`,
+    releaseDate: '12/31/2333',
+    platforms: ['Steam'],
+    status: 'Ongoing',
+    price: 'N/A',
+    rating: 'N/A',
+    trailerUrl: neondivide1,
     screenshots: [
-      '/path/to/screenshot1.jpg',
-      '/path/to/screenshot2.jpg',
-      '/path/to/screenshot3.jpg',
-      '/path/to/screenshot4.jpg'
+      neondivide1,
+      neondivide2,
+      neondivide3,
+      neondivide4
     ],
     features: [
-      'Open World Exploration',
-      'Custom Spell Crafting',
-      'Branching Storylines',
-      '50+ Hours of Content',
-      'Multiplayer Co-op',
-      'Achievement System'
+      'Leaderboards',
+      'Roguelike',
     ],
     systemRequirements: {
       minimum: {
         os: 'Windows 10 64-bit',
         processor: 'Intel i5-4590 / AMD FX 8350',
-        memory: '8 GB RAM',
+        memory: '4 GB RAM',
         graphics: 'NVIDIA GTX 970 / AMD R9 290',
-        storage: '25 GB available space'
+        storage: '2 GB available space'
       },
       recommended: {
         os: 'Windows 11 64-bit',
         processor: 'Intel i7-8700K / AMD Ryzen 5 3600',
         memory: '16 GB RAM',
         graphics: 'NVIDIA RTX 3060 / AMD RX 6600',
-        storage: '25 GB available space (SSD recommended)'
+        storage: '2 GB available space'
       }
     }
   },
-  'space-odyssey': {
-    title: 'Space Odyssey',
-    subtitle: 'Explore the Infinite Cosmos',
-    description: 'A space exploration game that takes you on a journey through the vast cosmos to uncover the secrets of ancient civilizations.',
-    longDescription: `Space Odyssey is an ambitious space exploration and survival game set in a procedurally generated universe. Players captain their own spacecraft, explore unknown systems, and piece together the mystery of a long-lost galactic civilization.
-
-    With realistic physics, resource management, and a deep crafting system, every journey into the unknown is both thrilling and challenging. Discover alien worlds, ancient artifacts, and forge your own path among the stars.`,
-    releaseDate: '2025-09-20',
-    platforms: ['Steam', 'GOG', 'Epic Games'],
-    status: 'Coming Soon',
-    price: 'TBA',
-    rating: 'Preview Build: 8.5/10',
-    trailerUrl: '/path/to/space-odyssey-trailer.mp4',
-    screenshots: [
-      '/path/to/space-screenshot1.jpg',
-      '/path/to/space-screenshot2.jpg',
-      '/path/to/space-screenshot3.jpg'
-    ],
-    features: [
-      'Procedural Universe Generation',
-      'Realistic Space Physics',
-      'Ship Customization',
-      'Alien World Exploration',
-      'Resource Management',
-      'Mystery Storyline'
-    ],
-    systemRequirements: {
-      minimum: {
-        os: 'Windows 10 64-bit',
-        processor: 'Intel i5-8400 / AMD Ryzen 5 2600',
-        memory: '12 GB RAM',
-        graphics: 'NVIDIA GTX 1060 / AMD RX 580',
-        storage: '35 GB available space'
-      },
-      recommended: {
-        os: 'Windows 11 64-bit',
-        processor: 'Intel i7-10700K / AMD Ryzen 7 3700X',
-        memory: '16 GB RAM',
-        graphics: 'NVIDIA RTX 3070 / AMD RX 6700 XT',
-        storage: '35 GB available space (SSD required)'
-      }
-    }
-  }
 };
 
 export default function GameDetail() {
@@ -146,11 +102,17 @@ export default function GameDetail() {
       {/* Hero Section */}
       <section className="game-hero">
         <div className="hero-background">
-          {game.trailerUrl && (
+          {/* {
+            game.trailerUrl && (
             <video autoPlay muted loop className="hero-video">
               <source src={game.trailerUrl} type="video/mp4" />
             </video>
-          )}
+          )} */}
+          {
+            game.trailerUrl && (
+              <img src={game.trailerUrl} className='hero-video'/>
+            )
+          }
           <div className="hero-overlay"></div>
         </div>
         <div className="hero-content">

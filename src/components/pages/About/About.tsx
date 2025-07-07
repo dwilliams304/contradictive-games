@@ -1,29 +1,12 @@
 import './About.css';
+import neondivide1 from "../../../assets/neondivide-1.png";
 
 const teamMembers = [
   {
-    name: "Alex Johnson",
-    role: "Lead Developer",
-    bio: "10+ years of experience in game development with a passion for creating immersive worlds.",
-    image: "/path/to/alex-profile.jpg"
-  },
-  {
-    name: "Sarah Chen",
-    role: "Game Designer",
-    bio: "Specializes in gameplay mechanics and player experience design with a background in psychology.",
-    image: "/path/to/sarah-profile.jpg"
-  },
-  {
-    name: "Mike Rodriguez",
-    role: "Technical Artist",
-    bio: "Bridge between art and programming, ensuring our games look amazing and run smoothly.",
-    image: "/path/to/mike-profile.jpg"
-  },
-  {
-    name: "Emma Wilson",
-    role: "Community Manager",
-    bio: "Connects with our amazing community and helps shape the future of our games based on player feedback.",
-    image: "/path/to/emma-profile.jpg"
+    name: "Davis",
+    role: "Lead Developer / Founder",
+    bio: "Basic biography would go here :)",
+    image: neondivide1
   }
 ];
 

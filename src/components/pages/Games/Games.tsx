@@ -1,34 +1,18 @@
 import { Link } from 'react-router-dom';
 import './Games.css';
 
+import neondivide1 from "../../../assets/neondivide-1.png";
+
 // Mock data - replace with your actual games data
 const gamesData = [
   {
-    id: 'adventure-quest',
-    title: 'Adventure Quest',
+    id: 'neon-divide',
+    title: 'Neon Divide',
     description: 'Embark on an epic journey through mystical lands filled with danger and wonder.',
-    image: '/path/to/adventure-quest-thumbnail.jpg',
-    status: 'Released',
-    releaseDate: '2024-03-15',
+    image: neondivide1,
+    status: 'Ongoing',
+    releaseDate: 'Coming Soon',
     platforms: ['Steam', 'Epic Games']
-  },
-  {
-    id: 'space-odyssey',
-    title: 'Space Odyssey',
-    description: 'Explore the vast cosmos and uncover the secrets of ancient civilizations.',
-    image: '/path/to/space-odyssey-thumbnail.jpg',
-    status: 'Coming Soon',
-    releaseDate: '2025-09-20',
-    platforms: ['Steam', 'GOG']
-  },
-  {
-    id: 'mystic-realms',
-    title: 'Mystic Realms',
-    description: 'Master the art of magic in this spellbinding adventure.',
-    image: '/path/to/mystic-realms-thumbnail.jpg',
-    status: 'Released',
-    releaseDate: '2023-11-08',
-    platforms: ['Steam', 'Epic Games', 'PlayStation']
   }
 ];
 
