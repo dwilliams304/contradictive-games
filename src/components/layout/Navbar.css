@@ -1,0 +1,114 @@
+/* Navbar Styles */
+.main-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  height: 80px;
+  background-color: rgba(1, 1, 4, 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(58, 49, 216, 0.3);
+  transition: var(--trs_med);
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  text-decoration: none;
+  color: var(--c_drk_txt);
+  transition: var(--trs_shrt);
+}
+
+.nav-logo:hover {
+  color: var(--c_drk_prim);
+}
+
+.nav-logo h1 {
+  font-size: var(--txt_lg);
+  font-weight: var(--fnt_thick);
+  background: linear-gradient(45deg, var(--c_drk_prim), var(--c_drk_acc));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-link {
+  color: var(--c_drk_txt);
+  text-decoration: none;
+  font-size: var(--txt_btn);
+  font-weight: var(--fnt_md);
+  padding: 0.5rem 1rem;
+  border-radius: var(--rnd_sm);
+  transition: var(--trs_shrt);
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.nav-link:hover {
+  color: var(--c_drk_prim);
+  background-color: rgba(58, 49, 216, 0.1);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: var(--c_drk_prim);
+  transition: var(--trs_shrt);
+  transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+  width: 80%;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .main-nav {
+    padding: 0 1rem;
+  }
+  
+  .nav-right {
+    gap: 1rem;
+  }
+  
+  .nav-link {
+    font-size: var(--txt_md);
+    padding: 0.25rem 0.5rem;
+  }
+  
+  .nav-logo h1 {
+    font-size: var(--txt_md);
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-right {
+    gap: 0.5rem;
+  }
+  
+  .nav-link {
+    font-size: var(--txt_sm);
+    padding: 0.25rem;
+  }
+}

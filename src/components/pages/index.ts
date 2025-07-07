@@ -1,5 +1,5 @@
-import HomePage from "./Home/HomePage";
-import LeaderboardsPage from "./Leaderboards/LeaderboardsPage";
+import HomePage from "./Home/Home";
+import LeaderboardsPage from "./Leaderboards/Leaderboards";
 
 export
 {

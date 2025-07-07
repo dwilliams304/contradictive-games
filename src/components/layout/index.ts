@@ -1,4 +1,4 @@
-import NavigationBar from "./NavigationBar";
+import NavigationBar from "./NavBar";
 import Footer from "./Footer";
 
 
