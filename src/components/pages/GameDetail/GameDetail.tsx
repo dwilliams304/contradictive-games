@@ -1,88 +1,11 @@
 import { useParams } from 'react-router-dom';
 import './GameDetail.css';
 
-import neondivide1 from '../../../assets/neondivide-1.png';
-import neondivide2 from '../../../assets/neondivide-2.png';
-import neondivide3 from '../../../assets/neondivide-3.png';
-import neondivide4 from '../../../assets/neondivide-4.png';
-
-// Types for game data
-interface GameData {
-  title: string;
-  subtitle: string;
-  description: string;
-  longDescription: string;
-  releaseDate: string;
-  platforms: string[];
-  status: string;
-  price: string;
-  rating: string;
-  trailerUrl: string;
-  screenshots: string[];
-  features: string[];
-  systemRequirements: {
-    minimum: {
-      os: string;
-      processor: string;
-      memory: string;
-      graphics: string;
-      storage: string;
-    };
-    recommended: {
-      os: string;
-      processor: string;
-      memory: string;
-      graphics: string;
-      storage: string;
-    };
-  };
-}
-
-// Mock game data - replace with your actual game data
-const gameData: { [key: string]: GameData } = {
-  'neon-divide': {
-    title: 'Neon Divide',
-    subtitle: 'Become the Resistance',
-    description: '',
-    longDescription: `There will be a long description that eventually goes here`,
-    releaseDate: '12/31/2333',
-    platforms: ['Steam'],
-    status: 'Ongoing',
-    price: 'N/A',
-    rating: 'N/A',
-    trailerUrl: neondivide1,
-    screenshots: [
-      neondivide1,
-      neondivide2,
-      neondivide3,
-      neondivide4
-    ],
-    features: [
-      'Leaderboards',
-      'Roguelike',
-    ],
-    systemRequirements: {
-      minimum: {
-        os: 'Windows 10 64-bit',
-        processor: 'Intel i5-4590 / AMD FX 8350',
-        memory: '4 GB RAM',
-        graphics: 'NVIDIA GTX 970 / AMD R9 290',
-        storage: '2 GB available space'
-      },
-      recommended: {
-        os: 'Windows 11 64-bit',
-        processor: 'Intel i7-8700K / AMD Ryzen 5 3600',
-        memory: '16 GB RAM',
-        graphics: 'NVIDIA RTX 3060 / AMD RX 6600',
-        storage: '2 GB available space'
-      }
-    }
-  },
-};
+import { GamesDetailData } from '../../../data/GamesDetailData';
 
 export default function GameDetail() {
   const { gameId } = useParams<{ gameId: string }>();
-  const game = gameId ? gameData[gameId] : null;
+  const game = gameId ? GamesDetailData[gameId] : null;
 
   if (!game) {
     return (
@@ -124,9 +47,10 @@ export default function GameDetail() {
               {game.status === 'Released' ? (
                 <a href="#" className="btn btn-primary">Play Now - {game.price}</a>
               ) : (
-                <a href="#" className="btn btn-primary">Wishlist on Steam</a>
+                // <a href="#" className="btn btn-primary">Wishlist on Steam</a>
+                <p>Coming Soon...</p>
               )}
-              <button className="btn btn-secondary">Watch Trailer</button>
+              {/* <button className="btn btn-secondary">Watch Trailer</button> */}
             </div>
           </div>
         </div>

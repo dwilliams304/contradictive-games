@@ -35,7 +35,7 @@ export interface SystemRequirements {
 }
 
 // News/Article types
-export interface NewsArticle {
+export interface INewsArticle {
   id: number;
   title: string;
   excerpt: string;
@@ -139,7 +139,7 @@ export interface SteamLeaderboardEntry {
 
 // Utility types
 export type GameStatus = Game['status'];
-export type NewsCategory = NewsArticle['category'];
+export type NewsCategory = INewsArticle['category'];
 export type LoadingState = 'idle' | 'loading' | 'success' | 'error';
 
 // Form types (for future contact forms, etc.)
@@ -158,4 +158,36 @@ export interface ApiError {
   message: string;
   status?: number;
   code?: string;
+}
+
+
+export interface IGameData {
+  title: string;
+  subtitle: string;
+  description: string;
+  longDescription: string;
+  releaseDate: string;
+  platforms: string[];
+  status: string;
+  price: string;
+  rating: string;
+  trailerUrl: string;
+  screenshots: string[];
+  features: string[];
+  systemRequirements: {
+    minimum: {
+      os: string;
+      processor: string;
+      memory: string;
+      graphics: string;
+      storage: string;
+    };
+    recommended: {
+      os: string;
+      processor: string;
+      memory: string;
+      graphics: string;
+      storage: string;
+    };
+  };
 }

@@ -17,8 +17,7 @@ export default function Home() {
         <div className="container">
           <h2>Welcome to Contradictive Games</h2>
           <p>
-            We create immersive gaming experiences that push the boundaries of storytelling and gameplay. 
-            Explore our collection of games and dive into worlds where every decision matters.
+            Basic description goes here.
           </p>
         </div>
       </section>

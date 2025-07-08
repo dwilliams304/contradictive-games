@@ -1,20 +1,8 @@
 import { Link } from 'react-router-dom';
 import './Games.css';
 
-import neondivide1 from "../../../assets/neondivide-1.png";
+import { GamesBasicData } from '../../../data/GamesBasicData';
 
-// Mock data - replace with your actual games data
-const gamesData = [
-  {
-    id: 'neon-divide',
-    title: 'Neon Divide',
-    description: 'Embark on an epic journey through mystical lands filled with danger and wonder.',
-    image: neondivide1,
-    status: 'Ongoing',
-    releaseDate: 'Coming Soon',
-    platforms: ['Steam', 'Epic Games']
-  }
-];
 
 export default function Games() {
   return (
@@ -26,7 +14,7 @@ export default function Games() {
         </header>
         
         <div className="games-grid">
-          {gamesData.map(game => (
+          {GamesBasicData.map(game => (
             <div key={game.id} className="game-card">
               <div className="game-image">
                 <img src={game.image} alt={game.title} />

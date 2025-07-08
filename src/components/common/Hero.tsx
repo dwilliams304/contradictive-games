@@ -6,23 +6,25 @@ interface HeroProps {
   backgroundImage?: string;
   gameTitle?: string;
   gameDescription?: string;
+  primaryButton?: string;
+  secondaryButton?: string;
 }
 
 export default function Hero({ 
   backgroundVideo, 
   backgroundImage, 
   gameTitle = "Our Latest Game",
-  gameDescription = "Experience the ultimate gaming adventure"
+  gameDescription = "Experience the ultimate gaming adventure",
+  primaryButton,
+  secondaryButton,
 }: HeroProps) {
   const [videoError, setVideoError] = useState(false);
 
   const handlePlayNow = () => {
-    // Add your play now logic here
     console.log('Play Now clicked');
   };
 
   const handleWatchTrailer = () => {
-    // Add your watch trailer logic here
     console.log('Watch Trailer clicked');
   };
 
@@ -63,18 +65,33 @@ export default function Hero({
         </div>
         
         <div className="hero-actions">
-          <button 
-            className="hero-btn primary"
-            onClick={handlePlayNow}
-          >
-            Play Now
-          </button>
-          <button 
-            className="hero-btn secondary"
-            onClick={handleWatchTrailer}
-          >
-            Watch Trailer
-          </button>
+          {
+            primaryButton && (
+            <button 
+              className="hero-btn primary"
+              onClick={handlePlayNow}
+            >
+              {primaryButton}
+            </button>
+            )
+          }
+          {
+            secondaryButton &&
+            (
+            <button 
+              className="hero-btn secondary"
+              onClick={handleWatchTrailer}
+            >
+              {secondaryButton}
+            </button>
+            )
+          }
+          {
+            !primaryButton && !secondaryButton &&
+            (
+              <p>Stay Tuned...</p>
+            )
+          }
         </div>
       </div>
     </section>
