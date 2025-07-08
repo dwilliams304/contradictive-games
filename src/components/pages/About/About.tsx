@@ -6,8 +6,30 @@ const teamMembers = [
     name: "Davis",
     role: "Lead Developer / Founder",
     bio: "Basic biography would go here :)",
-    image: NeonDivide_IMG_1
+    image: NeonDivide_IMG_1 //Placeholder
+  },
+  {
+    name: "The Community",
+    role: "Legends",
+    bio: "To all the people that have played, tested, complained, or has any way been involved in any of these games - thank you!",
+    image: NeonDivide_IMG_1 //Placeholder
   }
+];
+
+// Example data for the contributor tables
+const supporters = [
+  { name: "No One Yet :)" },
+  // Add more supporters as needed
+];
+
+const testers = [
+  { name: "No One Yet :)" },
+  // Add more testers as needed
+];
+
+const contributors = [
+  { name: "No One Yet :)" },
+  // Add more contributors as needed
 ];
 
 // const milestones = [
@@ -53,7 +75,7 @@ export default function About() {
         </section>
 
         {/* Values Section */}
-        <section className="values-section">
+        {/* <section className="values-section">
           <h2>Our Values</h2>
           <div className="values-grid">
             <div className="value-card">
@@ -77,12 +99,12 @@ export default function About() {
               <p>We never compromise on quality, taking the time needed to polish every aspect of our games.</p>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Team Section */}
         <section className="team-section">
           <h2>The Developers</h2>
-          <p>Here's all the people that have helped and contributed greatly to one or more projects.</p>
+          <p className="text-center py-4">Here's all the people that have helped and contributed greatly to one or more projects.</p>
           <div className="team-grid">
             {teamMembers.map((member, index) => (
               <div key={index} className="team-member">
@@ -96,6 +118,44 @@ export default function About() {
                 </div>
               </div>
             ))}
+          </div>
+
+          <h2>Thank you to the following:</h2>
+
+          {/* Contributor Tables */}
+          <div className="contributor-tables">
+            <div className="contributor-table">
+              <h3>Supporters</h3>
+              <div className="table-content">
+                {supporters.map((supporter, index) => (
+                  <div key={index} className="table-row">
+                    <span>{supporter.name}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="contributor-table">
+              <h3>Testers</h3>
+              <div className="table-content">
+                {testers.map((tester, index) => (
+                  <div key={index} className="table-row">
+                    <span>{tester.name}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="contributor-table">
+              <h3>Contributors</h3>
+              <div className="table-content">
+                {contributors.map((contributor, index) => (
+                  <div key={index} className="table-row">
+                    <span>{contributor.name}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </section>
 
