@@ -27,7 +27,7 @@
   left: 0;
   min-width: 200px;
   background-color: var(--c_drk_bg_Highlight);
-  border: 1px solid rgba(58, 49, 216, 0.3);
+  border: 1px solid rgba(0, 255, 191, 0.3);
   border-radius: var(--rnd_md);
   box-shadow: var(--shdw_boxMd);
   padding: 0.5rem 0;
@@ -62,7 +62,7 @@
 }
 
 .dropdown-item:hover {
-  background-color: rgba(58, 49, 216, 0.2);
+  background-color: rgba(0, 255, 191, 0.2);
   color: var(--c_drk_prim);
 }
 

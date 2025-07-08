@@ -12,18 +12,18 @@
 
   /* Colors */
   /* Dark */
-  --c_drk_txt: #ebe9fc;
-  --c_drk_bg: #010104;
-  --c_drk_bg_Highlight: #17173b;
-  --c_drk_prim: #3a31d8;
-  --c_drk_sec: #020024;
-  --c_drk_acc: #0600c2;
+  --c_drk_txt: #f5dedf;
+  --c_drk_bg: #050000;
+  --c_drk_bg_Highlight: #000f09;
+  --c_drk_prim: #00ffbf;
+  --c_drk_sec: #257862;
+  --c_drk_acc: #3f6ac5;
   /* Light */
-  --c_lght_text: #050316;
-  --c_lght_bg: #fbfbfe;
-  --c_lght_prim: #2f27ce;
-  --c_lght_sec: #dddbff;
-  --c_lght_acc: #443dff;
+  --c_lght_text: #1f0a0b;
+  --c_lght_bg: #fffafa;
+  --c_lght_prim: #00ffbf;
+  --c_lght_sec: #86dac4;
+  --c_lght_acc: #3964c0;
 
   /* Font weights */
   --fnt_thin: 300;
