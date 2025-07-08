@@ -62,7 +62,12 @@ export default function GameDetail() {
           <div className="info-grid">
             <div className="info-item">
               <h3>Release Date</h3>
-              <p>{new Date(game.releaseDate).toLocaleDateString()}</p>
+              {
+                game.releaseDate ?
+                (<p>{new Date(game.releaseDate).toLocaleDateString()}</p>)
+                :
+                (<p>No Release Date Yet</p>)
+              }
             </div>
             <div className="info-item">
               <h3>Platforms</h3>

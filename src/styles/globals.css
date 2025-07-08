@@ -47,7 +47,7 @@ body {
 
 .btn-primary {
   background-color: var(--c_drk_prim);
-  color: var(--c_drk_txt);
+  color: var(--c_lght_txt);
 }
 
 .btn-primary:hover {

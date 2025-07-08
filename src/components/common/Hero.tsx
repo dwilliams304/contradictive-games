@@ -15,8 +15,8 @@ export default function Hero({
   backgroundImage, 
   gameTitle = "Our Latest Game",
   gameDescription = "Experience the ultimate gaming adventure",
-  primaryButton,
-  secondaryButton,
+  primaryButton = "Wishlist on Steam",
+  secondaryButton = "Watch Trailer",
 }: HeroProps) {
   const [videoError, setVideoError] = useState(false);
 

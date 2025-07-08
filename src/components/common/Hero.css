@@ -106,7 +106,7 @@
 
 .hero-btn.primary {
   background: linear-gradient(45deg, var(--c_drk_prim), var(--c_drk_acc));
-  color: var(--c_drk_txt);
+  color: var(--c_lght_txt);
   box-shadow: var(--shdw_boxSm);
 }
 
@@ -125,6 +125,7 @@
 
 .hero-btn.secondary:hover {
   background-color: var(--c_drk_prim);
+  color: var(--c_lght_txt);
   transform: translateY(-3px);
   box-shadow: var(--shdw_boxSm);
 }

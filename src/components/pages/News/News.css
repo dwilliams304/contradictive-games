@@ -89,7 +89,7 @@
 
 .category {
   background-color: var(--c_drk_prim);
-  color: white;
+  color: var(--c_lght_txt);
   padding: 0.25rem 0.75rem;
   border-radius: var(--rnd_sm);
   font-weight: var(--fnt_md);
@@ -149,7 +149,7 @@
 .category-btn.active {
   background-color: var(--c_drk_prim);
   border-color: var(--c_drk_prim);
-  color: white;
+  color: var(--c_lght_txt);
 }
 
 /* Articles Grid */
@@ -199,7 +199,7 @@
 
 .article-category span {
   background-color: var(--c_drk_prim);
-  color: white;
+  color: var(--c_lght_txt);
   padding: 0.25rem 0.75rem;
   border-radius: var(--rnd_sm);
   font-size: var(--txt_sm);

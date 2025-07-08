@@ -13,9 +13,9 @@ export const GamesDetailData: { [key: string]: IGameData } = {
     subtitle: 'Become the Resistance',
     description: '',
     longDescription: `There will be a long description that eventually goes here`,
-    releaseDate: '12/31/2333',
-    platforms: ['Steam'],
-    status: 'Ongoing',
+    releaseDate: '',
+    platforms: ['Windows', 'MacOS', 'Linux/SteamOS'],
+    status: 'In Development',
     price: 'N/A',
     rating: 'N/A',
     trailerUrl: NeonDivide_IMG_1,
@@ -27,7 +27,9 @@ export const GamesDetailData: { [key: string]: IGameData } = {
     ],
     features: [
       'Leaderboards',
+      'Stats',
       'Roguelike',
+      'Controller Support',
     ],
     systemRequirements: {
       minimum: {
