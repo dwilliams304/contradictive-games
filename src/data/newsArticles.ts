@@ -1,7 +1,8 @@
-import neondivide1 from "../assets/neondivide-1.png";
-import neondivide2 from "../assets/neondivide-2.png";
-import neondivide3 from "../assets/neondivide-3.png";
-import neondivide4 from "../assets/neondivide-4.png";
+import { NeonDivide_IMG_1,
+  NeonDivide_IMG_2,
+  NeonDivide_IMG_3,
+  NeonDivide_IMG_4
+ } from "../assets/neondivide";
 
 export const NewsArticlesData = [
   {
@@ -12,7 +13,7 @@ export const NewsArticlesData = [
     author: "Development Team",
     publishDate: "2025-07-01",
     category: "Game Updates",
-    image: neondivide1,
+    image: NeonDivide_IMG_1,
     featured: true
   },
   {
@@ -23,7 +24,7 @@ export const NewsArticlesData = [
     author: "Lead Designer",
     publishDate: "2025-06-28",
     category: "Development",
-    image: neondivide2,
+    image: NeonDivide_IMG_2,
     featured: false
   },
   {
@@ -34,7 +35,7 @@ export const NewsArticlesData = [
     author: "Community Manager",
     publishDate: "2025-06-25",
     category: "Community",
-    image: neondivide3,
+    image: NeonDivide_IMG_3,
     featured: false
   },
   {
@@ -45,7 +46,7 @@ export const NewsArticlesData = [
     author: "Marketing Team",
     publishDate: "2025-06-20",
     category: "Events",
-    image: neondivide4,
+    image: NeonDivide_IMG_4,
     featured: false
   }
 ];

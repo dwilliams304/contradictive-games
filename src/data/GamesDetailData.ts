@@ -1,9 +1,10 @@
 import { IGameData } from "../types";
 
-import neondivide1 from "../assets/neondivide-1.png";
-import neondivide2 from "../assets/neondivide-2.png";
-import neondivide3 from "../assets/neondivide-3.png";
-import neondivide4 from "../assets/neondivide-4.png";
+import { NeonDivide_IMG_1,
+  NeonDivide_IMG_2,
+  NeonDivide_IMG_3,
+  NeonDivide_IMG_4
+ } from "../assets/neondivide";
 
 
 export const GamesDetailData: { [key: string]: IGameData } = {
@@ -17,12 +18,12 @@ export const GamesDetailData: { [key: string]: IGameData } = {
     status: 'Ongoing',
     price: 'N/A',
     rating: 'N/A',
-    trailerUrl: neondivide1,
+    trailerUrl: NeonDivide_IMG_1,
     screenshots: [
-      neondivide1,
-      neondivide2,
-      neondivide3,
-      neondivide4
+      NeonDivide_IMG_2,
+      NeonDivide_IMG_3,
+      NeonDivide_IMG_4,
+      NeonDivide_IMG_1
     ],
     features: [
       'Leaderboards',

@@ -69,9 +69,6 @@
   font-weight: var(--fnt_thick);
   margin-bottom: 1rem;
   text-shadow: var(--txt_shdw_sm);
-  background: linear-gradient(45deg, var(--c_drk_txt), var(--c_drk_prim));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 

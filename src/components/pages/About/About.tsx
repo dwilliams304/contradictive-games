@@ -1,22 +1,22 @@
 import './About.css';
-import neondivide1 from "../../../assets/neondivide-1.png";
+import { NeonDivide_IMG_1 } from '../../../assets/neondivide';
 
 const teamMembers = [
   {
     name: "Davis",
     role: "Lead Developer / Founder",
     bio: "Basic biography would go here :)",
-    image: neondivide1
+    image: NeonDivide_IMG_1
   }
 ];
 
-const milestones = [
-  { year: "2020", event: "Contradictive Games Founded", description: "Started with a vision to create games that challenge conventional thinking." },
-  { year: "2022", event: "First Game Release", description: "Launched our debut title to critical acclaim and positive player reception." },
-  { year: "2023", event: "Team Expansion", description: "Grew our team to include specialized roles in art, design, and community management." },
-  { year: "2024", event: "Multiple Platforms", description: "Expanded to multiple gaming platforms and reached 100K+ players worldwide." },
-  { year: "2025", event: "Next Generation", description: "Working on our most ambitious project yet with cutting-edge technology." }
-];
+// const milestones = [
+//   { year: "2020", event: "Contradictive Games Founded", description: "Started with a vision to create games that challenge conventional thinking." },
+//   { year: "2022", event: "First Game Release", description: "Launched our debut title to critical acclaim and positive player reception." },
+//   { year: "2023", event: "Team Expansion", description: "Grew our team to include specialized roles in art, design, and community management." },
+//   { year: "2024", event: "Multiple Platforms", description: "Expanded to multiple gaming platforms and reached 100K+ players worldwide." },
+//   { year: "2025", event: "Next Generation", description: "Working on our most ambitious project yet with cutting-edge technology." }
+// ];
 
 export default function About() {
   return (
@@ -81,7 +81,8 @@ export default function About() {
 
         {/* Team Section */}
         <section className="team-section">
-          <h2>Meet Our Team</h2>
+          <h2>The Developers</h2>
+          <p>Here's all the people that have helped and contributed greatly to one or more projects.</p>
           <div className="team-grid">
             {teamMembers.map((member, index) => (
               <div key={index} className="team-member">
@@ -98,7 +99,7 @@ export default function About() {
           </div>
         </section>
 
-        {/* Timeline Section */}
+        {/* Timeline Section
         <section className="timeline-section">
           <h2>Our Journey</h2>
           <div className="timeline">
@@ -112,10 +113,10 @@ export default function About() {
               </div>
             ))}
           </div>
-        </section>
+        </section> */}
 
         {/* Contact Section */}
-        <section className="contact-section">
+        {/* <section className="contact-section">
           <h2>Get In Touch</h2>
           <p>
             We love hearing from our community! Whether you have feedback, questions, 
@@ -132,7 +133,7 @@ export default function About() {
               🐦 Follow on Twitter
             </a>
           </div>
-        </section>
+        </section> */}
       </div>
     </div>
   );

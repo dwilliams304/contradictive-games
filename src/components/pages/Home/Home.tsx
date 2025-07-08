@@ -1,6 +1,6 @@
 import Hero from '../../common/Hero';
 import './Home.css';
-import neondivide1 from "../../../assets/neondivide-1.png";
+import { NeonDivide_IMG_1 } from '../../../assets/neondivide';
 
 export default function Home() {
   return (
@@ -8,7 +8,7 @@ export default function Home() {
       <Hero 
         gameTitle="Neon Divide"
         gameDescription="Become the Resistance"
-        backgroundImage={neondivide1}
+        backgroundImage={NeonDivide_IMG_1}
         // backgroundVideo="/path/to/your/game-trailer.mp4"
       />
       
