@@ -71,6 +71,49 @@
 }
 
 /* Player Leaderboard Styles */
+.leaderboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.nav-arrow {
+  background-color: var(--c_drk_bg_Highlight);
+  border: 1px solid rgba(58, 49, 216, 0.3);
+  border-radius: var(--rnd_md);
+  color: var(--c_drk_prim);
+  font-size: var(--txt_lg);
+  font-weight: var(--fnt_thick);
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  transition: var(--trs_shrt);
+  min-width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-arrow:hover:not(:disabled) {
+  background-color: var(--c_drk_prim);
+  color: white;
+  transform: scale(1.05);
+}
+
+.nav-arrow:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.leaderboard-header h2 {
+  margin: 0;
+  min-width: 200px;
+  text-align: center;
+}
+
 .leaderboard-table {
   background-color: var(--c_drk_bg_Highlight);
   border-radius: var(--rnd_lg);
@@ -108,27 +151,35 @@
   border-bottom: none;
 }
 
+/* Fixed alignment for all table cells */
+.table-header span,
+.table-row span {
+  display: flex;
+  align-items: center;
+}
+
 .rank {
   font-size: var(--txt_lg);
   font-weight: var(--fnt_thick);
-  text-align: center;
+  justify-content: center;
 }
 
 .player {
   font-weight: var(--fnt_md);
   color: var(--c_drk_txt);
+  justify-content: flex-start;
 }
 
 .score {
   font-weight: var(--fnt_thick);
   color: var(--c_drk_prim);
-  text-align: right;
+  justify-content: flex-end;
 }
 
 .game {
   font-size: var(--txt_sm);
   opacity: 0.8;
-  text-align: right;
+  justify-content: flex-end;
 }
 
 /* Game Statistics Styles */
