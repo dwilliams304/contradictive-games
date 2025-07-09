@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import './GameDetail.css';
+import './GamePage.css';
 
 import { GamesDetailData } from '../../../data/GamesDetailData';
 

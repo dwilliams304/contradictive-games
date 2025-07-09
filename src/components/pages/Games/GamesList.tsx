@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import './Games.css';
+import './GamesList.css';
 
 import { GamesBasicData } from '../../../data/GamesBasicData';
 

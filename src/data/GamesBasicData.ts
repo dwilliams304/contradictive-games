@@ -6,8 +6,8 @@ export const GamesBasicData = [
     title: 'Neon Divide',
     description: 'Embark on an epic journey through mystical lands filled with danger and wonder.',
     image: NeonDivide_IMG_1,
-    status: 'Ongoing',
+    status: 'IN DEV',
     releaseDate: 'Coming Soon',
-    platforms: ['Steam', 'Epic Games']
+    platforms: ['Windows', 'MacOS', 'Linux/SteamOS']
   }
 ];

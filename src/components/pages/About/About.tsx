@@ -1,5 +1,5 @@
 import './About.css';
-import { NeonDivide_IMG_1 } from '../../../assets/neondivide';
+import { NeonDivide_IMG_1, NeonDivide_IMG_2, NeonDivide_IMG_3, NeonDivide_IMG_4 } from '../../../assets/neondivide';
 
 const teamMembers = [
   {
@@ -9,36 +9,31 @@ const teamMembers = [
     image: NeonDivide_IMG_1 //Placeholder
   },
   {
+    name: "Placeholder",
+    role: "Placeholder",
+    bio: "Placeholder",
+    image: NeonDivide_IMG_2 //Placeholder
+  },
+  {
     name: "The Community",
     role: "Legends",
     bio: "To all the people that have played, tested, complained, or has any way been involved in any of these games - thank you!",
-    image: NeonDivide_IMG_1 //Placeholder
-  }
+    image: NeonDivide_IMG_3 //Placeholder
+  },
+
 ];
 
-// Example data for the contributor tables
 const supporters = [
   { name: "No One Yet :)" },
-  // Add more supporters as needed
 ];
 
 const testers = [
   { name: "No One Yet :)" },
-  // Add more testers as needed
 ];
 
 const contributors = [
   { name: "No One Yet :)" },
-  // Add more contributors as needed
 ];
-
-// const milestones = [
-//   { year: "2020", event: "Contradictive Games Founded", description: "Started with a vision to create games that challenge conventional thinking." },
-//   { year: "2022", event: "First Game Release", description: "Launched our debut title to critical acclaim and positive player reception." },
-//   { year: "2023", event: "Team Expansion", description: "Grew our team to include specialized roles in art, design, and community management." },
-//   { year: "2024", event: "Multiple Platforms", description: "Expanded to multiple gaming platforms and reached 100K+ players worldwide." },
-//   { year: "2025", event: "Next Generation", description: "Working on our most ambitious project yet with cutting-edge technology." }
-// ];
 
 export default function About() {
   return (
@@ -70,36 +65,10 @@ export default function About() {
             </p>
           </div>
           <div className="mission-image">
-            <img src="/path/to/studio-image.jpg" alt="Our game development studio" />
+            <img src={NeonDivide_IMG_4} alt="Placeholder picture" />
           </div>
         </section>
 
-        {/* Values Section */}
-        {/* <section className="values-section">
-          <h2>Our Values</h2>
-          <div className="values-grid">
-            <div className="value-card">
-              <div className="value-icon">🎮</div>
-              <h3>Player-First</h3>
-              <p>Every decision we make is guided by what will create the best experience for our players.</p>
-            </div>
-            <div className="value-card">
-              <div className="value-icon">💡</div>
-              <h3>Innovation</h3>
-              <p>We constantly push boundaries and explore new possibilities in game design and technology.</p>
-            </div>
-            <div className="value-card">
-              <div className="value-icon">🤝</div>
-              <h3>Community</h3>
-              <p>We build our games with and for our community, valuing feedback and fostering connection.</p>
-            </div>
-            <div className="value-card">
-              <div className="value-icon">⭐</div>
-              <h3>Quality</h3>
-              <p>We never compromise on quality, taking the time needed to polish every aspect of our games.</p>
-            </div>
-          </div>
-        </section> */}
 
         {/* Team Section */}
         <section className="team-section">
@@ -158,22 +127,6 @@ export default function About() {
             </div>
           </div>
         </section>
-
-        {/* Timeline Section
-        <section className="timeline-section">
-          <h2>Our Journey</h2>
-          <div className="timeline">
-            {milestones.map((milestone, index) => (
-              <div key={index} className="timeline-item">
-                <div className="timeline-year">{milestone.year}</div>
-                <div className="timeline-content">
-                  <h3>{milestone.event}</h3>
-                  <p>{milestone.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section> */}
 
         {/* Contact Section */}
         {/* <section className="contact-section">

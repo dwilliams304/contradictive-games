@@ -1,8 +1,8 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './News.css';
 
 import { NewsArticlesData } from '../../../data/newsArticles';
-
 
 const categories = ["All", "Game Updates", "Development", "Community", "Events"];
 
@@ -46,7 +46,12 @@ export default function News() {
               <p>{featuredArticle.excerpt}</p>
               <div className="article-footer">
                 <span className="author">By {featuredArticle.author}</span>
-                <button className="btn btn-primary">Read More</button>
+                <Link 
+                  to={`/news/${featuredArticle.id}`} 
+                  className="btn btn-primary"
+                >
+                  Read More
+                </Link>
               </div>
             </div>
           </div>
@@ -86,7 +91,12 @@ export default function News() {
                 </div>
                 <h3>{article.title}</h3>
                 <p>{article.excerpt}</p>
-                <button className="read-more-btn">Read More</button>
+                <Link 
+                  to={`/news/${article.id}`} 
+                  className="read-more-btn"
+                >
+                  Read More
+                </Link>
               </div>
             </article>
           ))}

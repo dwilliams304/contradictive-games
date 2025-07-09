@@ -15,7 +15,7 @@ export const GamesDetailData: { [key: string]: IGameData } = {
     longDescription: `There will be a long description that eventually goes here`,
     releaseDate: '',
     platforms: ['Windows', 'MacOS', 'Linux/SteamOS'],
-    status: 'In Development',
+    status: 'IN DEV',
     price: 'N/A',
     rating: 'N/A',
     trailerUrl: NeonDivide_IMG_1,

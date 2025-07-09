@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="footer-content">
         <div className="footer-section">
           <h3>Contradictive Games</h3>
-          <p>Creating immersive gaming experiences that challenge conventional gameplay.</p>
+          <p>PLACE.HOLDER.TEXT.WOW!</p>
         </div>
         
         <div className="footer-section">
@@ -27,7 +27,6 @@ export default function Footer() {
           <ul className="footer-links">
             <li><a href="#" target="_blank" rel="noopener noreferrer">Steam</a></li>
             <li><a href="#" target="_blank" rel="noopener noreferrer">Discord</a></li>
-            <li><a href="#" target="_blank" rel="noopener noreferrer">Twitter</a></li>
             <li><a href="#" target="_blank" rel="noopener noreferrer">YouTube</a></li>
           </ul>
         </div>
