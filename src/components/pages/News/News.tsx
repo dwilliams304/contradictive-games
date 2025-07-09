@@ -59,7 +59,10 @@ export default function News() {
               <button
                 key={category}
                 className={`category-btn ${selectedCategory === category ? 'active' : ''}`}
-                onClick={() => setSelectedCategory(category)}
+                onClick={() => {
+                  setSelectedCategory(category);
+                  window.scrollTo(0, 0);
+                }}
               >
                 {category}
               </button>

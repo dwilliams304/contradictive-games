@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ScrollToTop from './utils/ScrollToTop';
 import Navbar from './components/layout/NavBar';
 import Footer from './components/layout/Footer';
 import Home from './components/pages/Home/Home';
@@ -12,6 +13,7 @@ import './styles/globals.css';
 export default function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="app">
         <Navbar />
         <main className="main-content">
