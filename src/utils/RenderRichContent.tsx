@@ -1,6 +1,6 @@
-import { RichContentBlock } from "../data/newsArticles"
+import { IRichContentBlock } from "../data/newsArticles"
 
-export const RenderRichContent = (block: RichContentBlock, index: number) => {
+export const RenderRichContent = (block: IRichContentBlock, index: number) => {
     switch (block.type) {
         case 'paragraph':
             return <p key={index}> {block.content} </p>;
