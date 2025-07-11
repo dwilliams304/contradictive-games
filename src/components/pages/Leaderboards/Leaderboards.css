@@ -125,7 +125,7 @@
 .table-header,
 .table-row {
   display: grid;
-  grid-template-columns: 80px 1fr 120px 150px;
+  grid-template-columns: 80px 1fr 200px;
   gap: 1rem;
   padding: 1rem 1.5rem;
   align-items: center;
@@ -157,6 +157,17 @@
   display: flex;
   align-items: center;
 }
+
+.table-header span:nth-child(1),
+.table-row span:nth-child(1) {
+  justify-self: center;
+}
+
+.table-header span:last-child,
+.table-row span:last-child {
+  justify-self: end;
+}
+
 
 .rank {
   font-size: var(--txt_lg);

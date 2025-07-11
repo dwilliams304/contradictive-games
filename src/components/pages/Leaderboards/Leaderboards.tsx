@@ -3,7 +3,7 @@ import { GamesList as games } from "../../../data/Games";
 import { GameStats, INumberStat, IPlayerStat } from "../../../data/GameStats";
 import './Leaderboards.css';
 
-import { FormatTime } from "../../../utils/TimeFormatter";
+import { FormatTime } from "../../../utils/NumberFormatters";
 
 
 const statCategories = [
@@ -33,9 +33,7 @@ export default function Leaderboards() {
 
   // Get current game data
   const currentGameData = GameStats.find(game => game.gameId === selectedGame);
-  
-  // Get current game name from games array
-  const currentGameName = games.find(game => game.id === selectedGame)?.name || 'Unknown Game';
+
 
   // Get current stats and leaderboards
   const currentStats = currentGameData?.stats || [];
@@ -126,7 +124,6 @@ export default function Leaderboards() {
                     <span>Rank</span>
                     <span>Player</span>
                     <span>Score</span>
-                    <span>Game</span>
                   </div>
                   {currentLeaderboard.entries.map(entry => (
                     <div key={entry.rank} className="table-row">
@@ -143,7 +140,6 @@ export default function Leaderboards() {
                           : entry.score.toLocaleString()
                         }
                       </span>
-                      <span className="game">{currentGameName}</span>
                     </div>
                   ))}
                 </div>

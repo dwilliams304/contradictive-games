@@ -76,15 +76,6 @@
   flex-wrap: wrap;
 }
 
-.tag {
-  background-color: rgba(58, 49, 216, 0.1);
-  color: var(--c_drk_prim);
-  padding: 0.25rem 0.5rem;
-  border-radius: var(--rnd_sm);
-  font-size: var(--txt_xs);
-  font-weight: var(--fnt_md);
-}
-
 .article-title {
   font-size: var(--txt_2xl);
   font-weight: var(--fnt_thick);

@@ -19,7 +19,7 @@ export default function Games() {
               <div className="game-image">
                 <img src={game.image} alt={game.title} />
                 <div className="game-status">
-                  <span className={`status-badge ${game.status.toLowerCase().replace(' ', '-')}`}>
+                  <span className={`${game.status.toLowerCase().replace(' ', '-')}`}>
                     {game.status}
                   </span>
                 </div>
@@ -37,7 +37,7 @@ export default function Games() {
                     <strong>Platforms:</strong>
                     <div className="platform-tags">
                       {game.platforms.map(platform => (
-                        <span key={platform} className="platform-tag">{platform}</span>
+                        <span key={platform} className="tag platform">{platform}</span>
                       ))}
                     </div>
                   </div>

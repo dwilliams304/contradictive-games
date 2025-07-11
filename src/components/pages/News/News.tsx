@@ -39,7 +39,7 @@ export default function News() {
             </div>
             <div className="featured-content">
               <div className="article-meta">
-                <span className="category">{featuredArticle.category}</span>
+                <span className={`tag ${featuredArticle.category.toLowerCase().replace(' ', '-')}`}>{featuredArticle.category}</span>
                 <span className="date">{formatDate(featuredArticle.publishDate)}</span>
               </div>
               <h2>{featuredArticle.title}</h2>
@@ -81,7 +81,7 @@ export default function News() {
               <div className="article-image">
                 <img src={article.image} alt={article.title} />
                 <div className="article-category">
-                  <span>{article.category}</span>
+                  <span className={`tag ${article.category.toLowerCase().replace(' ', '-')}`}>{article.category}</span>
                 </div>
               </div>
               <div className="article-content">

@@ -27,4 +27,8 @@ function FormatTime(value: number): string {
     return result || '0';
 }
 
-export { FormatTime }
+function FormatDate(value: Date): string {
+    return value ? value.toDateString() : "Not Date Yet";
+}
+
+export { FormatTime, FormatDate }

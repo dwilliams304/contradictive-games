@@ -41,7 +41,7 @@ export default function NewsArticle() {
         {/* Article Header */}
         <header className="article-header">
           <div className="article-meta">
-            <span className="category">{article.category}</span>
+            <span className={`tag ${article.category.toLowerCase().replace(/\s+/g, '-')}`}>{article.category}</span>
             <span className="date">{formatDate(article.publishDate)}</span>
             {article.readTime && <span className="read-time">{article.readTime} min read</span>}
           </div>

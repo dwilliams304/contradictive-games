@@ -142,7 +142,7 @@ export default function Home() {
               <article key={article.id} className="news-card">
                 <div className="news-image">
                   <img src={article.image} alt={article.title} />
-                  <div className="news-category">{article.category}</div>
+                  <div className={`news-category tag ${article.category.toLowerCase().replace(' ', '-')}`}>{article.category}</div>
                 </div>
                 <div className="news-content">
                   <div className="news-meta">
@@ -166,9 +166,9 @@ export default function Home() {
           <div className="community-content">
             <div className="community-stats">
               <div className="community-card">
-                <div className="community-icon">🎮</div>
-                <h3>Active Players</h3>
-                <p>Join thousands of players in our growing community</p>
+                <div className="community-icon">🏆</div>
+                <h3>Player Rankings</h3>
+                <p>See how you stack up against other players and climb the leaderboards</p>
                 <Link to="/leaderboards" className="btn btn-primary">View Leaderboards</Link>
               </div>
               <div className="community-card">
@@ -178,10 +178,10 @@ export default function Home() {
                 <Link to="/news" className="btn btn-primary">Read News</Link>
               </div>
               <div className="community-card">
-                <div className="community-icon">🏆</div>
-                <h3>Compete & Win</h3>
-                <p>Climb the rankings and showcase your skills</p>
-                <Link to="/leaderboards" className="btn btn-primary">Compete Now</Link>
+                <div className="community-icon">🎮</div>
+                <h3>Ready to Play?</h3>
+                <p>Browse all our games and jump into endless possibilites</p>
+                <Link to="/games" className="btn btn-primary">Browse Games</Link>
               </div>
             </div>
           </div>

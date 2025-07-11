@@ -73,13 +73,13 @@ export default function GameDetail() {
               <h3>Platforms</h3>
               <div className="platforms">
                 {game.platforms.map((platform) => (
-                  <span key={platform} className="platform-tag">{platform}</span>
+                  <span key={platform} className="tag platform">{platform}</span>
                 ))}
               </div>
             </div>
             <div className="info-item">
               <h3>Status</h3>
-              <span className={`status-badge ${game.status.toLowerCase().replace(' ', '-')}`}>
+              <span className={`tag ${game.status.toLowerCase().replace(' ', '-')}`}>
                 {game.status}
               </span>
             </div>

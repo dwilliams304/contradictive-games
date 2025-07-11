@@ -92,3 +92,86 @@ body {
 .py-2 { padding-top: 1rem; padding-bottom: 1rem; }
 .py-3 { padding-top: 1.5rem; padding-bottom: 1.5rem; }
 .py-4 { padding-top: 2rem; padding-bottom: 2rem; }
+
+
+/* Base tag styles */
+.tag {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--rnd_sm);
+  font-size: var(--txt_sm);
+  font-weight: var(--fnt_md);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: var(--trs_shrt);
+  border: 1px solid transparent;
+}
+
+/* Status-based tags */
+.tag.released,
+.tag.available {
+  background-color: #10b981;
+  color: white;
+}
+
+.tag.coming-soon,
+.tag.comingsoon {
+  background-color: #ffc107;
+  color: #1a1a1a;
+}
+
+.tag.in-development,
+.tag.indev {
+  background-color: #17a2b8;
+  color: white;
+}
+
+/* Category-based tags */
+.tag.game-updates {
+  background-color: var(--c_drk_prim);
+  color: var(--c_lght_txt);
+}
+
+.tag.development {
+  background-color: #6366f1;
+  color: white;
+}
+
+.tag.community {
+  background-color: #8b5cf6;
+  color: white;
+}
+
+.tag.events {
+  background-color: #f59e0b;
+  color: var(--c_lght_txt);
+}
+
+/* Platform tags */
+.tag.platform {
+  background-color: rgba(58, 49, 216, 0.2);
+  color: var(--c_drk_prim);
+  border: 1px solid var(--c_drk_prim);
+}
+
+/* Interactive tags (hoverable) */
+.tag.interactive {
+  cursor: pointer;
+}
+
+.tag.interactive:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shdw_boxSm);
+  opacity: 0.9;
+}
+
+/* Size variants */
+.tag.tag-lg {
+  padding: 0.5rem 1rem;
+  font-size: var(--txt_md);
+}
+
+.tag.tag-xs {
+  padding: 0.125rem 0.5rem;
+  font-size: var(--txt_xs);
+}
