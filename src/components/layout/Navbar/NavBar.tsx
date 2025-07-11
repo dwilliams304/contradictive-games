@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { DropdownMenu } from '../common';
+import { DropdownMenu } from '../../common';
 import './Navbar.css';
 
 // Mock games data - you can replace this with your actual data

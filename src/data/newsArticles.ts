@@ -5,7 +5,7 @@ import { NeonDivide_IMG_1,
  } from "../assets/neondivide";
 
 // Rich content structure for articles
-interface RichContentBlock {
+interface IRichContentBlock {
   type: 'paragraph' | 'heading' | 'list' | 'image' | 'quote' | 'code';
   content: string | string[];
   level?: number; // for headings (h1, h2, h3, etc.)
@@ -13,12 +13,12 @@ interface RichContentBlock {
   author?: string; // for quotes
 }
 
-interface NewsArticle {
+interface INewsArticle {
   id: number;
   title: string;
   excerpt: string;
   content: string; // Keep for backward compatibility
-  richContent: RichContentBlock[]; // New rich content structure
+  richContent: IRichContentBlock[]; // New rich content structure
   author: string;
   publishDate: string;
   category: string;
@@ -28,7 +28,7 @@ interface NewsArticle {
   readTime?: number; // estimated reading time in minutes
 }
 
-export const NewsArticlesData: NewsArticle[] = [
+export const NewsArticlesData: INewsArticle[] = [
   {
     id: 1,
     title: "Mystic Realms: The Shadow Update Now Live",
@@ -277,4 +277,4 @@ export const NewsArticlesData: NewsArticle[] = [
   }
 ];
 
-export type { NewsArticle, RichContentBlock };
+export type { INewsArticle, IRichContentBlock };

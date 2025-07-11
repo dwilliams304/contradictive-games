@@ -1,14 +1,15 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ScrollToTop from './utils/ScrollToTop';
-import Navbar from './components/layout/NavBar';
-import Footer from './components/layout/Footer';
-import Home from './components/pages/Home/Home';
-import Games from './components/pages/Games/GamesList';
-import News from './components/pages/News/News';
-import NewsArticle from './components/pages/NewsArticle/NewsArticle';
-import About from './components/pages/About/About';
-import Leaderboards from './components/pages/Leaderboards/Leaderboards';
-import GameDetail from './components/pages/GamePage/GamePage';
+import { Navbar, Footer } from './components/layout';
+import { HomePage, 
+  GamesListPage, 
+  GameDetailPage,
+  NewsListPage,
+  NewsArticlePage,
+  AboutPage,
+  LeaderboardsPage 
+} from './components/pages';
+
 import './styles/globals.css';
 
 export default function App() {
@@ -19,13 +20,13 @@ export default function App() {
         <Navbar />
         <main className="main-content">
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/games" element={<Games />} />
-            <Route path="/games/:gameId" element={<GameDetail />} />
-            <Route path="/news" element={<News />} />
-            <Route path="/news/:articleId" element={<NewsArticle />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/leaderboards" element={<Leaderboards />} />
+            <Route path="/" element={<HomePage />} />
+            <Route path="/games" element={<GamesListPage />} />
+            <Route path="/games/:gameId" element={<GameDetailPage />} />
+            <Route path="/news" element={<NewsListPage />} />
+            <Route path="/news/:articleId" element={<NewsArticlePage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/leaderboards" element={<LeaderboardsPage />} />
           </Routes>
         </main>
         <Footer />

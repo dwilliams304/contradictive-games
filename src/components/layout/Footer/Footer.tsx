@@ -25,9 +25,9 @@ export default function Footer() {
         <div className="footer-section">
           <h4>Connect</h4>
           <ul className="footer-links">
-            <li><a href="#" target="_blank" rel="noopener noreferrer">Steam</a></li>
-            <li><a href="#" target="_blank" rel="noopener noreferrer">Discord</a></li>
-            <li><a href="#" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            <li><a href="https://store.steampowered.com/search/?developer=Contradictive%20Games" target="_blank" rel="noopener noreferrer">Steam</a></li>
+            <li><a href="https://discord.gg/hBbcyYd5my" target="_blank" rel="noopener noreferrer">Discord</a></li>
+            <li><a href="https://www.youtube.com/@ContradictiveGames" target="_blank" rel="noopener noreferrer">YouTube</a></li>
           </ul>
         </div>
         
